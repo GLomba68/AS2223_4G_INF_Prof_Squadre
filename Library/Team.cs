@@ -76,6 +76,7 @@ namespace Library
         {
             // TODO T.3
             
+            
         }
 
         /// <summary>
@@ -84,7 +85,14 @@ namespace Library
         /// <returns></returns>
         public string GetPlayers()
         {
+            string lista = "";
             // TODO T.4
+            foreach (Player players in players)
+            {
+                lista += $"{players}\n";
+
+            }
+            return lista;
         }
 
         public string Name { get { return name; } }
