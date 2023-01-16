@@ -24,6 +24,7 @@ namespace Library
         public string Description()
         {
             // TODO P.2
+            return ($"{name}, {surname}, {role}");
         }
 
         public ERole Role { 
