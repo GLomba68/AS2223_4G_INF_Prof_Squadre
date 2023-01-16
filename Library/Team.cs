@@ -30,6 +30,7 @@ namespace Library
         {
             // TODO T.1
             this.name = name;
+            
         }
 
         /// <summary>
@@ -41,7 +42,25 @@ namespace Library
         /// <returns>True if player has been inserted</returns>
         public bool AddPlayer(Player player)
         {
+            
             // TODO T.2
+
+            int nGiocatori = 0;
+
+            foreach (Player players in players)
+            {
+                nGiocatori++;
+            }
+
+            if (nGiocatori+1 <= 14)
+            {
+                players.Add(player);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
