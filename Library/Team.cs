@@ -51,10 +51,7 @@ namespace Library
             foreach (Player players in players)
             {
                 nGiocatori++;
-                if(players == ERole.Rosa)
-                {
                 
-                }
             }
 
             if (nGiocatori+1 <= 14)
