@@ -46,10 +46,15 @@ namespace Library
             // TODO T.2
 
             int nGiocatori = 0;
+            
 
             foreach (Player players in players)
             {
                 nGiocatori++;
+                if(players == ERole.Rosa)
+                {
+                
+                }
             }
 
             if (nGiocatori+1 <= 14)
