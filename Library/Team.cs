@@ -85,11 +85,13 @@ namespace Library
         /// <returns></returns>
         public string GetPlayers()
         {
+            int i = 1;
             string lista = "";
             // TODO T.4
             foreach (Player players in players)
             {
-                lista += $"{players}\n";
+                lista += $"{i} : {players}\n";
+                i++;
 
             }
             return lista;
